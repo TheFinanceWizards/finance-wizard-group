@@ -1,9 +1,9 @@
 import emailjs from '@emailjs/browser';
 
-// Replace these with your EmailJS credentials
-const SERVICE_ID = 'YOUR_SERVICE_ID';
-const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+const SERVICE_ID = 'service_zlc1mm4';
+const APPLICANT_TEMPLATE_ID = 'template_zvyvy1p'; // confirmation sent to recruit
+const TEAM_TEMPLATE_ID = 'template_t74c05d';      // notification sent to your inbox
+const PUBLIC_KEY = 'vTM5LTV6hviy4vpuc';
 
 export async function sendApplicationEmail(form) {
   const templateParams = {
@@ -17,5 +17,8 @@ export async function sendApplicationEmail(form) {
     message: form.message || '',
   };
 
-  return emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+  return Promise.all([
+    emailjs.send(SERVICE_ID, APPLICANT_TEMPLATE_ID, templateParams, PUBLIC_KEY),
+    emailjs.send(SERVICE_ID, TEAM_TEMPLATE_ID, templateParams, PUBLIC_KEY),
+  ]);
 }
