@@ -89,7 +89,7 @@ export default function Testimonials() {
               {/* Author */}
               <div className="flex items-center gap-3 pt-6 border-t border-gray-100">
                 {t.image ? (
-                   <img src={t.image} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
+                   <img src={t.image} alt={t.name} className="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy" />
                  ) : (
                    <div className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center">
                      <span className="text-xs font-bold text-white">{t.initials}</span>

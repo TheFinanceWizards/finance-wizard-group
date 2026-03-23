@@ -47,6 +47,9 @@ export default function Navbar() {
                 src="/images/logo.jpg"
                 alt="The Finance Wizards"
                 className="w-10 h-10 rounded-full object-cover"
+                width="40"
+                height="40"
+                fetchPriority="high"
               />
               <span className={`font-bold text-lg tracking-tight transition-colors duration-300 ${
                 scrolled ? "text-gray-900" : "text-gray-900"

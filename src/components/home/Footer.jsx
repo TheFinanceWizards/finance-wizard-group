@@ -35,6 +35,9 @@ export default function Footer() {
                 src="/images/logo.jpg"
                 alt="The Finance Wizards"
                 className="w-7 h-7 rounded-full object-cover"
+                width="28"
+                height="28"
+                loading="lazy"
               />
               <span className="font-bold text-sm text-gray-300">The Finance Wizards</span>
             </div>
