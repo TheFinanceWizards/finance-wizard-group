@@ -41,7 +41,7 @@ export default function Footer() {
               />
               <span className="font-bold text-sm text-gray-300">The Finance Wizards</span>
             </div>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-400">
               © {new Date().getFullYear()} InsureTransform. All rights reserved. For licensed insurance professionals only.
             </p>
           </div>

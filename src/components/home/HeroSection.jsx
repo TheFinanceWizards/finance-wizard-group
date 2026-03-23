@@ -109,7 +109,7 @@ export default function HeroSection({ onOpenApplication }) {
                 <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-3 group-hover:bg-black group-hover:text-white transition-all duration-300">
                   <p.icon className="w-5 h-5" />
                 </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1">{p.label}</h3>
+                <p className="font-bold text-gray-900 text-sm mb-1">{p.label}</p>
                 <p className="text-gray-500 text-xs leading-relaxed">{p.sub}</p>
               </div>
             ))}
