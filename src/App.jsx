@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Suspense, lazy } from 'react'
+import { HelmetProvider } from 'react-helmet-async'
 import Home from './pages/Home'
 
 // Lazy-load ApplicationForm — it's a separate route most visitors never hit
@@ -21,16 +22,18 @@ function PageLoader() {
 
 export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Router>
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/ApplicationForm" element={<ApplicationForm />} />
-          </Routes>
-        </Suspense>
-        <Toaster />
-      </Router>
-    </QueryClientProvider>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/ApplicationForm" element={<ApplicationForm />} />
+            </Routes>
+          </Suspense>
+          <Toaster />
+        </Router>
+      </QueryClientProvider>
+    </HelmetProvider>
   )
 }

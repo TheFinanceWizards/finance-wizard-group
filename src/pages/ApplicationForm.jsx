@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, Check, Loader2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -122,7 +123,37 @@ export default function ApplicationForm() {
     }
   };
 
+  const appFormJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Apply to Partner With The Finance Wizard Group",
+      "description": "Submit your application to join The Finance Wizard Group. Licensed insurance agents can apply for partnership, premium commissions, and brand-scaling support.",
+      "url": "https://thefinancewizardgroup.com/ApplicationForm",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "The Finance Wizard Group",
+        "url": "https://thefinancewizardgroup.com"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thefinancewizardgroup.com" },
+          { "@type": "ListItem", "position": 2, "name": "Apply", "item": "https://thefinancewizardgroup.com/ApplicationForm" }
+        ]
+      }
+    }
+  ];
+
   return (
+    <>
+      <SEO
+        title="Apply to Partner With Us"
+        description="Submit your application to join The Finance Wizard Group. Licensed insurance agents — apply now for 80–100% commissions, direct-to-carrier access, and a proven brand-scaling system."
+        canonical="https://thefinancewizardgroup.com/ApplicationForm"
+        jsonLd={appFormJsonLd}
+      />
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4 py-12">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -321,5 +352,6 @@ export default function ApplicationForm() {
         </div>
       </motion.div>
     </div>
+    </>
   );
 }
