@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import ApplicationQuestionnaireModal from "./ApplicationQuestionnaireModal";
 
-export default function ApplicationSection({ showModal, setShowModal }) {
+export default function ApplicationSection() {
+  const [showModal, setShowModal] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
   const handleModalSubmit = async (form) => {
