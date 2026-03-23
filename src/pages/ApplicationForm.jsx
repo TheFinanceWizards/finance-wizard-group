@@ -154,15 +154,15 @@ export default function ApplicationForm() {
         canonical="https://thefinancewizardgroup.com/ApplicationForm"
         jsonLd={appFormJsonLd}
       />
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center p-4 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-start sm:items-center justify-center p-4 py-8 sm:py-12">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-hidden flex flex-col"
+        className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[85dvh] overflow-hidden flex flex-col"
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-200">
+        <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-200">
           <div>
             <h2 className="text-xl font-bold text-gray-900">{currentQuestion.title}</h2>
             <p className="text-sm text-gray-500 mt-1">{currentQuestion.subtitle}</p>
@@ -180,7 +180,7 @@ export default function ApplicationForm() {
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto p-6">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6">
           <motion.div
             key={step}
             initial={{ opacity: 0, y: 20 }}
@@ -303,7 +303,7 @@ export default function ApplicationForm() {
         </div>
 
         {/* Footer */}
-        <div className="border-t border-gray-200 p-6 bg-gray-50">
+        <div className="border-t border-gray-200 p-4 sm:p-6 bg-gray-50">
           <div className="flex items-center justify-between gap-3 mb-3">
             <Button
               variant="outline"

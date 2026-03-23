@@ -51,7 +51,7 @@ export default function Navbar() {
                 height="40"
                 fetchPriority="high"
               />
-              <span className={`font-bold text-lg tracking-tight transition-colors duration-300 ${
+              <span className={`font-bold text-sm sm:text-lg tracking-tight transition-colors duration-300 ${
                 scrolled ? "text-gray-900" : "text-gray-900"
               }`}>
                 The Finance Wizards

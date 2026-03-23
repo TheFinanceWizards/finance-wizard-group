@@ -44,7 +44,7 @@ export default function StatsBar() {
     ];
 
   return (
-    <section className="relative py-16 lg:py-20 bg-gray-50 overflow-hidden">
+    <section className="relative py-12 lg:py-20 bg-gray-50 overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
@@ -56,7 +56,7 @@ export default function StatsBar() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
           <div className="h-1 w-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-3">
@@ -76,11 +76,11 @@ export default function StatsBar() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 text-center hover:shadow-xl hover:border-gray-300 transition-all duration-300 group"
+              className="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-xl hover:border-gray-300 transition-all duration-300 group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-purple-50/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-2">
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-2">
                   <AnimatedCounter target={stat.value} suffix={stat.suffix || ""} prefix={stat.prefix || ""} />
                 </div>
                 <p className="text-sm md:text-base text-gray-500 font-medium">{stat.label}</p>

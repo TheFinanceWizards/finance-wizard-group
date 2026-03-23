@@ -47,7 +47,7 @@ export default function ApplicationSection() {
   }
 
   return (
-    <section id="apply" className="relative py-20 lg:py-28 bg-white overflow-hidden">
+    <section id="apply" className="relative py-16 lg:py-28 bg-white overflow-hidden">
       <div className="absolute top-40 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-blue-50 to-purple-50 rounded-full blur-3xl opacity-50" />
 
       <ApplicationQuestionnaireModal
@@ -77,7 +77,7 @@ export default function ApplicationSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-10 sm:mb-16"
         >
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
             Start Your Transformation
@@ -142,7 +142,7 @@ export default function ApplicationSection() {
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <div className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 shadow-xl text-center">
+            <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl text-center">
               <h3 className="text-lg font-bold text-gray-900 mb-3">
                 Submit Your Application
               </h3>

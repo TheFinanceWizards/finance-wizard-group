@@ -44,7 +44,7 @@ export default function PlatformTools() {
   ];
 
   return (
-    <section id="platform" className="relative py-20 lg:py-28 bg-white overflow-hidden">
+    <section id="platform" className="relative py-16 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <motion.div
@@ -76,7 +76,7 @@ export default function PlatformTools() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group relative bg-white border border-gray-200 rounded-2xl p-7 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 transition-all duration-300"
+              className="group relative bg-white border border-gray-200 rounded-2xl p-5 sm:p-7 hover:shadow-xl hover:border-gray-300 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center mb-5 group-hover:bg-black transition-colors duration-300">
                 <tool.icon className="w-6 h-6 text-gray-600 group-hover:text-white transition-colors duration-300" />

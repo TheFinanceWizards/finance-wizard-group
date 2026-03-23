@@ -58,7 +58,7 @@ export default function ValuePillars() {
   ];
 
   return (
-    <section id="value-pillars" className="relative py-20 lg:py-28 bg-gradient-to-br from-purple-50 to-purple-100 overflow-hidden">
+    <section id="value-pillars" className="relative py-16 lg:py-28 bg-gradient-to-br from-purple-50 to-purple-100 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -94,7 +94,7 @@ export default function ValuePillars() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className={`group relative bg-white border border-gray-200 rounded-3xl p-8 lg:p-12 hover:shadow-2xl hover:border-gray-300 transition-all duration-500 overflow-hidden`}
+              className={`group relative bg-white border border-gray-200 rounded-3xl p-5 sm:p-8 lg:p-12 hover:shadow-2xl hover:border-gray-300 transition-all duration-500 overflow-hidden`}
             >
               {/* Background glow */}
               <div className={`absolute top-0 right-0 w-96 h-96 ${pillar.bgGlow} rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -translate-y-1/2 translate-x-1/4`} />
@@ -112,7 +112,7 @@ export default function ValuePillars() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-black text-gray-900 mb-4 leading-tight">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-gray-900 mb-4 leading-tight">
                     {pillar.headline}
                   </h3>
                   <p className="text-gray-500 leading-relaxed mb-6">
@@ -121,7 +121,7 @@ export default function ValuePillars() {
                 </div>
 
                 {/* Features */}
-                <div className="bg-gray-50 rounded-2xl p-6 lg:p-8 border border-gray-100">
+                <div className="bg-gray-50 rounded-2xl p-5 sm:p-6 lg:p-8 border border-gray-100">
                   <div className="flex items-center gap-2 mb-5">
                     <div className={`w-8 h-8 rounded-lg bg-gradient-to-r ${pillar.gradient} flex items-center justify-center`}>
                       <pillar.icon className="w-4 h-4 text-white" />

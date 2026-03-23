@@ -30,7 +30,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="relative py-20 lg:py-28 bg-gradient-to-br from-purple-900 to-purple-800 text-white overflow-hidden">
+    <section id="testimonials" className="relative py-16 lg:py-28 bg-gradient-to-br from-purple-900 to-purple-800 text-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -47,7 +47,7 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-10 sm:mb-16"
         >
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">
             <div className="w-2 h-2 bg-purple-400 rounded-full" />
@@ -67,7 +67,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="relative bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl hover:border-gray-300 transition-all duration-300 flex flex-col"
+              className="relative bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 hover:shadow-xl hover:border-gray-300 transition-all duration-300 flex flex-col"
               >
               {/* Quote icon */}
               <Quote className="w-8 h-8 text-gray-200 mb-4" />

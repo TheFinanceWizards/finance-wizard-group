@@ -29,19 +29,19 @@ export default function PainPoints() {
   ];
 
   return (
-    <section id="why-us" className="relative py-20 lg:py-28 bg-white overflow-hidden">
+    <section id="why-us" className="relative py-16 lg:py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mb-16"
+          className="max-w-3xl mb-12"
         >
           <span className="inline-block text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">
             The Reality
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
             Why Most Agents{" "}
             <span className="bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
               Stay Stuck
@@ -56,7 +56,7 @@ export default function PainPoints() {
         </motion.div>
 
         {/* Problem cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 sm:mb-20">
           {problems.map((p, i) => (
             <motion.div
               key={i}
@@ -82,7 +82,7 @@ export default function PainPoints() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gray-50 border border-gray-200 rounded-2xl p-8"
+            className="relative bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8"
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-purple-400" />
@@ -103,7 +103,7 @@ export default function PainPoints() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="relative bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl p-8 text-white"
+            className="relative bg-gradient-to-br from-purple-600 to-purple-700 rounded-2xl p-6 sm:p-8 text-white"
           >
             <div className="flex items-center gap-3 mb-6">
             <div className="w-3 h-3 rounded-full bg-white" />
