@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 
-const SERVICE_ID = 'service_zlc1mm4';
+const SERVICE_ID = 'service_h6dckl7';
 const APPLICANT_TEMPLATE_ID = 'template_zvyvy1p'; // confirmation sent to recruit
 const TEAM_TEMPLATE_ID = 'template_t74c05d';      // notification sent to your inbox
 const PUBLIC_KEY = 'vTM5LTV6hviy4vpuc';
