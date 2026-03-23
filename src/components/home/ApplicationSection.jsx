@@ -11,6 +11,7 @@ export default function ApplicationSection() {
 
   const handleModalSubmit = async (form) => {
     setShowModal(false);
+    setSubmitted(true);
   };
 
   const highlights = [
